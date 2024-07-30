@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mywebsite.css">
+  <title>My Website</title>
+  
+</head>
+<body>
+
+<div class="main">
+  <div class="topbar">
+    <label class="logo">Cek My_Website</label>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+        <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="content">
+    <section id="beranda">
+      <h1>Design My Website</h1>
+      <p>Harap baca web saya dengan teliti!</p>
+      <div>
+        <button type="button"><span></span>MORE INFORMATION?</button>
+        <button type="button"><span></span>SUBSCRIBE</button>
+      </div>
+    </section>
+
+    <section id="profil">
+      <div class="profil-content">
+        <div class="image-container">
+          <img src="MyPicture.jpeg" alt="" width="200px" height="320px">
+        </div>
+        <div class="text-container">
+          <table class="profil-table">
+
+          <td>Nama : Sarfia</td></tr>
+          <tr><td>Nim : 16323043</tr></td>
+          <tr><td>Agama : Islam</tr></td>
+          <tr><td>Alamat : Danaweria</tr></td>
+          <tr><td>RT/RW : 02/00</tr></td>
+          <tr><td>Kecamatan : Fakfak Tengah</tr></td>
+          <tr><td>Status : Always Single</tr></td>
+          <tr><td>Nomor WhatsApp : 082264939363</tr></td>
+          <tr><td>Asal Sekolah : SMA Negeri 1 Fakfak</tr></td>
+          <tr><td>Jurusan : D3 Manajemen Informatika</tr></td>
+          <tr><td>TTL : Fongkaniwa / 21 November 2004</tr></td>
+          <tr><td>Asal daerah : Sulawesi Tenggara</tr></td>
+          <tr><td>Hoby : <br>1. Nonton Drama Korea/China, Horor <br>2. Membaca cerita Wattpad <br>3. Pencinta Kpop<br></tr></td>
+          <tr><td>Cita-Cita : Menikah dengan Ceo Korea, ganteng, Islam dari lahir</tr></td>
+          <tr><td>Moto hidup : Hidup itu opsional. Apa yang di pilih dari awal, itu yang di peroleh di akhir.</tr></td>
+      </table>
+    </div>
+  </div>
+</section>
+
+    <section id="audio-video">
+      <h2>Audio dan Video</h2>
+      <p>Selamat menikmati Sound Video dan Song yang telah saya sediakan<br></p>
+      <audio controls src="Aaryan Shah - Renegade [Official Video].mp3" alt="Audio description"></audio>
+      <video controls autoplay src="Lullaby of Woe - Ashley Serena (LYRICS).mp4" width="250" height="250" alt="Video description"></video>
+    </section>
+
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>Perkenalkan, nama saya sarfia tapi sering di panggil Fifi di kampus.Saya Anak ke 4 dari 7 bersaudara, yupp saya anak tengah.Saya tinggal di kota Fakfak ini 
+        sejak saya masih berusia 6 tahun tepat nya saya ikut orang tua saya merantau di kota Fakfak
+        ini sejak tahun 2010. Awal nya saya tinggal di jalan Fakfak kokas akan tetapi di tahun 2023 Awal
+        saya beserta keluarga saya pindah ke sebrang/ Danaweria. Saya tidak memilki kemampuan yang 
+        patut dijadikan panutan. Tergolong otak pas rata-rata, tidak pintar, tidak juga bodoh.
+        Saya orangnya pemalas. Lebih suka rebahan sambil menonton drama Korea atau drama China.
+        Saya tertarik dengan dunia per-kpop an, i love BTS. Keseharian saya, Bangun, mandi, ke kampus,
+        kalau pulang nya siang saya biasanya lanjut jaga jualan gantikan mamah saya. Kalau libur dan
+        tidak ada tugas rumah, saya akan menggantikan mama saya berjualan dari pagi sampai sore.
+        Saya gampang bersosialisasi akan tetapi saya lebih suka kesunyian. Saya takut kecoak apalagi 
+        ketika dia terbang, dan saya tidak merasa geli/ takut dengan cicak. Ada satu hewan yang buat
+        saya penasaran dan sangat ingin saya coba makan yaitu ulat sagu. Saya suka sesuatu yang
+        menantang,Ular menurut saya cukup menantang adrenalin saya. akan tetapi untuk sekarang
+        saya hanya berani memegang ular jinak yang memiliki pawang, bukan ular liar yang baru ditemukan. <br></p>
+    </section>
+
+    <section id="berita">
+      <h2>Berita Terbaru</h2>
+    <a href="https://www.okezone.com/tag/pembunuhan" 
+        target="_blank" style="color: white; color: white;">Berita tentang pembunuhan hari ini</a>
+      </p>
+  </div>
+
+  <footer>
+    <p>&copy; Sarfia</p>
+  </footer>
+</div>
+
+<script>
+ 
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = e.target.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>

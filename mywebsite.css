@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Trebuchet MS';
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(54, 61, 203, 0.75), rgba(33, 7, 150, 0.301)), url("Jinxx.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.topbar {
+    width: 100%; /* Make the topbar stretch across the entire width of the screen */
+    padding: 35px 0; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /* Ensure the topbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Higher z-index to ensure it stays on top */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a background to make it visible */
+}
+
+
+.topbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.topbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #960404;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.topbar ul li a {
+    color: #ffffffe6; 
+    text-decoration: none;
+}
+
+.topbar ul li a:hover {
+    color: #c84545;
+}
+
+.topbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.logo {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    cursor: pointer;
+    padding-left: 20px; 
+}
+
+
+.content {
+    width: 100%;
+    color: white;
+}
+
+#beranda {
+    background-image: url(Ilustrasi.jpg);
+    background-size: 1000px;
+    text-align: center;
+    padding: 200px 20px; 
+}
+
+#beranda h1 {
+    font-size: 69px;
+    margin-top: 80px;
+}
+
+#beranda p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    margin: 20px 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: 3px solid #2740ff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+span {
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    background: #2740ff;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    color: #055296;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+
+#profil {
+    background-image: url(Zodiak.jpg);
+    background-size: 1000px;
+}
+  
+#profil h2 {
+  height:200% ;
+  text-align: left;
+}
+
+#profil p {
+  width: 100%;
+  text-align: left;
+}
+
+#profil {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+#profil img {
+  width: 50%;
+  text-align: left;
+}
+
+#audio-video {
+    background-image: url(Laut\ tenang.jpg);
+    background-size: 1000px;
+}
+
+#tentang {
+    background-image: url(Kerajaan.jpg);
+    background-size: 1000px;
+    font-style: italic;
+    
+}
+
+#berita {
+    background-image: url(Bumi.jpg);
+    background-size: 1000px;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
